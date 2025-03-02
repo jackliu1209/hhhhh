@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    
+<title>Hey！喵呜！- 个人网站主页（mw4.cn）</title>
+<meta name="keywords" content="Hey！喵呜！- 个人网站主页（mw4.cn）">
+<meta name="description" content="Hey！喵呜！- 个人网站主页（mw4.cn）">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layer.css" type="text/css" media="all">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content>
+<meta name="keywords" content=" ">
+<meta name="author" content="Shrinath Nayak">
+<meta name="robots" content="index, follow">
+<style>
+    /* 遮罩层 */
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    /* 图片容器 */
+    #popupImage {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8); /* 初始缩放 */
+        opacity: 0; /* 初始透明度 */
+        transition: all 0.3s ease; /* 动画效果 */
+        z-index: 1001;
+        width: 400px; /* 设置图片宽度 */
+        height: auto; /* 高度自适应 */
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px; /* 圆角 */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 阴影 */
+    }
+    /* 图片弹出时的动画 */
+    #popupImage.active {
+        transform: translate(-50%, -50%) scale(1); /* 放大到正常大小 */
+        opacity: 1; /* 完全不透明 */
+    }
+</style>
+</head>
+<body>
+    
+    <!-- 遮罩层 -->
+    <div id="overlay" onclick="hideImage()"></div>
+
+    <!-- 图片 -->
+    <img id="popupImage" src="./images/wexin.png" alt="Popup Image">
+
+    <script>
+        function showImage() {
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("popupImage").style.display = "block";
+            // 添加动画类
+            setTimeout(() => {
+                document.getElementById("popupImage").classList.add("active");
+            }, 10); // 延迟10ms确保显示后再触发动画
+        }
+
+        function hideImage() {
+            document.getElementById("popupImage").classList.remove("active");
+            // 等待动画结束后隐藏
+            setTimeout(() => {
+                document.getElementById("overlay").style.display = "none";
+                document.getElementById("popupImage").style.display = "none";
+            }, 300); // 300ms是动画的持续时间
+        }
+    </script>
+  
+<!--Card-->
+<div class="card animated fadeIn bg-texture">
+   <center><img class="img_gs center animated rollIn" src="images/ava.jpeg" alt="avatar"></center>
+   <div class="name">喵呜</div>
+   <p class="introduction">Freelancers.</p>
+   <p class="location"><i class="fa fa-map-marker"> China</i> 
+	   <a href="https://mw4.cn/" target="_blank">喵呜导航</a>	   
+	   
+   </p><p class="subtitle">QQ：75582170</p>
+   <p class="subtitle">微信：MiaoWu</p>
+   <p class="subtitle">https://mw4.cn</p>
+	
+   <p></p>
+   <p class="icons animated pulse">
+      <a href="javaScript:qq('75582170');">
+      <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-qq fa-stack-1x"></i>
+      </span>
+     </a>
+      <a href="javascript:void(0);" onclick="showImage()">
+      <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-3x fa-stack-2x"></i>     
+          <i class="fa fa-wechat fa-stack-1x"></i>
+      </span>
+      </a>
+      
+      
+       <a href="https://v.qq.com/" target="_blank">
+      <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-film fa-stack-1x"></i>
+      </span>
+      </a>
+      
+      
+      <a href="https://music.163.com/#/user/home?id=1408211781" target="_blank">
+      <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-music fa-stack-1x"></i>
+      </span>
+      </a>
+      <a href="mailto:1@mw4.cn">
+      <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-envelope fa-stack-1x"></i>
+      </span>
+      </a>
+      <a href target="_blank">
+
+            <span class="fa-stack fa-lg">
+
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+
+                <i class="fa fa-home fa-stack-1x"></i>
+
+            </span>
+
+            </a>
+   </p>
+</div>
+<!--footer-->
+<footer class="animated fadeIn">&copy; 2018 - 2024 喵呜.</p>
+
+
+ <!--<center style="padding: 0;margin:0;FONT-SIZE: 15px;: none">   
+   <br><a href="https://beian.miit.gov.cn/shouye.html">晋ICP备2024041609号-1</a> </p>-->
+
+
+
+   <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" style="display:inline-block;text-decoration:none;height:10px;line-height:10px;">
+   <p style="float:left;height:1px;line-height:20px;margin: 0px 10px 10px 20px; color:#CD7F32 ;FONT-SIZE: 13px ;">晋ICP备2024041609号-1</p></a></p>
+
+
+<!-- 五彩斑斓的播放器 -->
+<div class="colorful-container" style="position: relative; padding: 20px; border-radius: 20px; overflow: hidden; display: inline-block; background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb, #d4fc79); background-size: 400% 400%; animation: gradientBG 10s ease infinite; width: 100%; max-width: 400px;">
+    <!-- 毛玻璃背景 -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); z-index: 1; border-radius: 20px;"></div>
+    
+    <!-- 播放器和表情 -->
+    <div style="position: relative; z-index: 2; text-align: center;">
+        <!-- 温暖的小表情 -->
+        <div style="font-size: 24px; margin-bottom: 10px;">
+            🎵 ❤️ 🎶
+        </div>
+        
+        <!-- 播放器 -->
+        <iframe 
+            frameborder="no" 
+            border="0" 
+            marginwidth="0" 
+            marginheight="0" 
+            width="100%" 
+            height="120" 
+            src="//music.163.com/outchain/player?type=2&id=1373280815&auto=1&height=66"
+            style="border-radius: 12px; border: 2px solid rgba(255, 255, 255, 0.2); box-shadow: 0 4px 12px rgba(255, 154, 158, 0.6), 0 4px 12px rgba(161, 196, 253, 0.6), 0 4px 12px rgba(212, 252, 121, 0.6);"
+        ></iframe>
+    </div>
+</div>
+
+<!-- 动画效果 -->
+<style>
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .colorful-container {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .colorful-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(255, 154, 158, 0.8), 0 8px 24px rgba(161, 196, 253, 0.8), 0 8px 24px rgba(212, 252, 121, 0.8);
+    }
+
+    /* 手机端适配 */
+    @media (max-width: 480px) {
+        .colorful-container {
+            padding: 15px;
+            border-radius: 15px;
+        }
+        iframe {
+            height: 100px; /* 手机端高度调小 */
+        }
+        .colorful-container .emoji {
+            font-size: 20px; /* 手机端表情调小 */
+        }
+    }
+</style>
+<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=10042639396&auto=1&height=32"></iframe>
+<!--这个是歌单不带图-->
+
+
+
+<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=10042639396&auto=1&height=90"></iframe>
+    这个是加载歌单<embed src="music/123.mp3"autostart="true" loop="true" hidden="true"></embed>-->
+
+
+
+
+<!--公网安备代码<div style="width:300px;margin:0 auto; padding:10px 0;">
+<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=411088888888" style="display:inline-block;text-decoration:none;height:10px;line-height:10px;">
+<img src="images/beian.png" style="float:left;"/>
+<p style="float:left;height:1px;line-height:20px;margin: 0px 10px 10px 20px; color:#939393;FONT-SIZE: 15px;">晋公网安备 暂无号</p></a>
+</div>-->
+   
+   
+</center>
+
+<script src="js/layui.js"></script>
+<script src="js/layer.js"></script>
+<script src="js/customer.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

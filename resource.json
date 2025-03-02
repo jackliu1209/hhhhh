@@ -1,0 +1,90 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为网页资源信息",
+        " *   success字段为下载保存成功的资源;failures字段则为下载保存失败的资源URL",
+        " *   success字段为标准树结构，每一层资源父子关系、URL和保存路径清晰明了",
+        " *   本文件仅为记录检测到的网页资源以便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "success": [
+        {
+            "url": "https://mw4.cn/",
+            "path": "index.html",
+            "children": [
+                {
+                    "url": "https://mw4.cn/img/ava.jpg",
+                    "path": "images/ava.jpeg"
+                },
+                {
+                    "url": "https://mw4.cn/layui/layui.js",
+                    "path": "js/layui.js"
+                },
+                {
+                    "url": "https://mw4.cn/layer/layer.js",
+                    "path": "js/layer.js"
+                },
+                {
+                    "url": "https://mw4.cn/layer/customer.js",
+                    "path": "js/customer.js"
+                },
+                {
+                    "url": "https://mw4.cn/css/style.css",
+                    "path": "css/style.css",
+                    "children": [
+                        {
+                            "url": "https://mw4.cn/img/bg.jpg",
+                            "path": "images/bg.jpg"
+                        }
+                    ]
+                },
+                {
+                    "url": "https://mw4.cn/css/font-awesome.css",
+                    "path": "css/font-awesome.css",
+                    "children": [
+                        {
+                            "url": "https://mw4.cn/fonts/fontawesome-webfont.eot?v=4.7.0",
+                            "path": "fonts/fontawesome-webfont_1.eot"
+                        },
+                        {
+                            "url": "https://mw4.cn/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0",
+                            "path": "fonts/fontawesome-webfont.eot"
+                        },
+                        {
+                            "url": "https://mw4.cn/fonts/fontawesome-webfont.woff2?v=4.7.0",
+                            "path": "fonts/fontawesome-webfont.woff2"
+                        },
+                        {
+                            "url": "https://mw4.cn/fonts/fontawesome-webfont.woff?v=4.7.0",
+                            "path": "fonts/fontawesome-webfont.woff"
+                        },
+                        {
+                            "url": "https://mw4.cn/fonts/fontawesome-webfont.ttf?v=4.7.0",
+                            "path": "fonts/fontawesome-webfont.ttf"
+                        },
+                        {
+                            "url": "https://mw4.cn/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular",
+                            "path": "images/fontawesome-webfont.svg"
+                        }
+                    ]
+                },
+                {
+                    "url": "https://mw4.cn/css/animate.css",
+                    "path": "css/animate.css"
+                },
+                {
+                    "url": "https://mw4.cn/css/fonts.css",
+                    "path": "css/fonts.css",
+                    "children": []
+                },
+                {
+                    "url": "https://mw4.cn/layui/css/modules/layer/default/layer.css",
+                    "path": "css/layer.css",
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "failures": []
+}

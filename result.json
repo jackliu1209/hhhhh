@@ -1,0 +1,56 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为请求参数，包括不限于网址、请求头、响应头、COOKIE、Referer、UserAgent",
+        " *   本文件仅为记录详细请求参数便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "directory": "mw4-cn-poji3ssv",
+    "options": {
+        "url": "https://mw4.cn/",
+        "index": "index.html",
+        "domain": "mw4.cn",
+        "origin": "https://mw4.cn,http://mw4.cn",
+        "ipaddress": "81.70.211.103",
+        "originURL": "http://mw4.cn",
+        "filenameGenerator": "byType",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/",
+                "referer": "http://mw4.cn/"
+            }
+        },
+        "response": {
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx",
+                "date": "Sun, 11 Apr 2021 13:55:48 GMT",
+                "content-type": "text/html",
+                "last-modified": "Wed, 24 Mar 2021 05:47:20 GMT",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "etag": "W/\"605ad268-ba6\"",
+                "strict-transport-security": "max-age=31536000",
+                "content-encoding": "gzip"
+            }
+        }
+    },
+    "user": {
+        "isWhite": false
+    },
+    "formatter": [
+        "saveOriginal"
+    ],
+    "time": {
+        "start": 1618149347830,
+        "end": 1618149350896,
+        "spend": 3.066
+    }
+}
